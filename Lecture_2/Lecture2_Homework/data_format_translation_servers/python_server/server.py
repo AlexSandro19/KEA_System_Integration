@@ -13,13 +13,13 @@ def _():
 @app.get("/getCsv")
 def _():
     response = parse_script.parse_csv("./files/denmark_info.csv")
-    print(response)
+    #print(response)
     return response
 
 @app.get("/getYaml")
 def _():
     response = parse_script.parse_yaml("./files/denmark_info.yaml")
-    print(response)
+    #print(response)
     return response
 
 @app.get("/test")

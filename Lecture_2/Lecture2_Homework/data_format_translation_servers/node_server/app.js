@@ -8,16 +8,14 @@ const app = express();
 app.use(express.static("public"))
 
 app.get("/getJson", (req, res) => {
-    const parsedData = parseMethods.parse_json("./files/denmark_info.json");
-    const stringifiedJson = JSON.stringify(parsedData)
-    res.json({ data: stringifiedJson })
+    const data = parseMethods.parse_json("./files/denmark_info.json");
+    res.json({ data })
 })
 
 app.get("/getXml", (req, res) => {
     // res.sendFile(__dirname + "/public/duck.html")
-    const parsedData = parseMethods.parse_xml("./files/denmark_info.xml");
-    const stringifiedJson = JSON.stringify(parsedData)
-    res.json({ data: stringifiedJson })
+    const data = parseMethods.parse_xml("./files/denmark_info.xml");
+    res.json({ data })
 })
 
 app.get("/test", async (req, res) => {
