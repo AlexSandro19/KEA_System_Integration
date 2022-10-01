@@ -37,6 +37,6 @@ def parse_txt(file_path):
         print(f"{key}: {value}") 
     print()
 
-parse_csv("../files/denmark_info.csv")
-parse_yaml("../files/denmark_info.yaml")
-parse_txt("../files/denmark_info.txt")
+parse_csv("../../files/denmark_info.csv")
+parse_yaml("../../files/denmark_info.yaml")
+parse_txt("../../files/denmark_info.txt")
