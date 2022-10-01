@@ -10,6 +10,7 @@ app.get("/timestamp", (req, res) => {
 })
 
 app.get("/timestampFromOtherServer", async (req, res) => {
+    // the other server (which is in python_server folder) should be also running
     const getDateFromOtherServer = await fetch('http://127.0.0.1:8000/timestamp');
     const responseInJson = await getDateFromOtherServer.json();
     console.log(responseInJson);

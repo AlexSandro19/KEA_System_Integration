@@ -13,6 +13,7 @@ def _():
 
 @app.get("/timestampFromOtherServer")
 def _():
+    # the other server (which is in node_server folder) should be also running
     get_Date_From_Other_Server = requests.get("http://localhost:3000/timestamp")
     content = get_Date_From_Other_Server.content
     return {"response": content}
