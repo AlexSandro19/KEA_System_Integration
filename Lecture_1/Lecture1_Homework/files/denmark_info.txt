@@ -1,0 +1,16 @@
+Country
+Denmark
+Capital
+Copenhagen
+Location
+Europe
+Neighbouring Countries
+Germany, Sweden, Norway
+Language
+Danish
+Population
+5,831,000
+Area
+42,951
+partOfEU
+true

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.io (Express)</title>
+</head>
+<body>
+    <h3>Type your name</h3>
+    <input placeholder="Name" id="name">
+    <button onclick="sendName()">Submit name</button>
+    <br><br>
+    <div id="name_response"></div>
+    <br><br>
+    <button onclick="sendPing()">Ping</button>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        // io is defined in the library
+        const socket = io();
+        function sendPing() {
+            console.log("sending ping");
+            socket.emit("ping", "Secret message")
+        }
+        
+        function sendName() {
+            const name = document.getElementById("name").value;
+            console.log("name", name);
+            socket.emit("name_request", name)
+        }
+        
+        socket.on("pong", (secretMessage) => {
+            console.log("Pong", secretMessage);
+        }) 
+        
+        socket.on("name_response", (response) => {
+            const div_name = document.getElementById("name_response");
+            div_name.innerText = response
+            console.log("Name response", response);
+        }) 
+    </script>
+</body>
+</html>

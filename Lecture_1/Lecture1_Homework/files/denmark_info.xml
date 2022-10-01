@@ -1,0 +1,14 @@
+<denmark_info>
+    <country>Denmark</country>
+    <capital>Copenhagen</capital>
+    <location>Europe</location>
+    <neighbouring_countries>
+        <neighbouring_country>Germany</neighbouring_country>
+        <neighbouring_country>Sweden</neighbouring_country>
+        <neighbouring_country>Norway</neighbouring_country>
+    </neighbouring_countries>
+    <language>Danish</language>
+    <population>5831000</population>
+    <area>42951</area>
+    <part_of_eu>true</part_of_eu>
+</denmark_info>

@@ -1,0 +1,10 @@
+{
+    "Country": "Denmark",
+    "Capital": "Copenhagen",
+    "Location": "Europe",
+    "Neighbouring Countries": ["Germany", "Sweden", "Norway"],
+    "Language": "Danish",
+    "Population": 5831000,
+    "Area": 42951,
+    "partOfEU": true
+}

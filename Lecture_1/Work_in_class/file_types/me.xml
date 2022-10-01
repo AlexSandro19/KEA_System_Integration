@@ -1,0 +1,17 @@
+<me>
+    <name>Alex</name>
+    <aage>22</aage>
+    <likesProgramming>true</likesProgramming>
+    <hobbies>
+        <hobby>Biking</hobby>
+        <hobby>Music</hobby>
+    </hobbies>
+</me>
+
+Reference:
+{
+    "name": "Alex",
+    "age": 22,
+    "likesProgramming": true, 
+    "hobbies": ["biking", "music"]
+}
